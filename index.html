@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dawg Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Welcome to Dawg Shop</h1>
+
+  <p>Quality products. Great service. Made for you.</p>
+
+  <h2>Our Products</h2>
+
+  <h3>Product 1</h3>
+  <img src="images/product1.jpg" alt="Product 1">
+  <p>Our first product.</p>
+  <p>Price: ₱100</p>
+  <button onclick="orderProduct('Product 1', 100)">Buy Now</button>
+
+  <h3>Product 2</h3>
+  <img src="images/product2.jpg" alt="Product 2">
+  <p>Our second product.</p>
+  <p>Price: ₱200</p>
+  <button onclick="orderProduct('Product 2', 200)">Buy Now</button>
+
+  <h2>Contact Us</h2>
+  <p>Email: dawgshop664@gmail.com</p>
+
+  <script>
+    function orderProduct(product, price) {
+      let name = prompt("Enter your name:");
+
+      if (name) {
+        alert("Thanks, " + name + "! You selected " + product + " for ₱" + price + ".");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
